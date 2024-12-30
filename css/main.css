@@ -17,10 +17,6 @@ button {
   border: none;
 }
 
-input {
-  text-align: center;
-}
-
 :root {
   --primary-color: #ef3700;
   --secondary-color: #eaeaea;
