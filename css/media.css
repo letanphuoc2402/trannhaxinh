@@ -1,0 +1,75 @@
+@charset "UTF-8";
+@media screen and (max-width: 992px) {
+  .header-top__contact {
+    display: none;
+  }
+  .header-top__company {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 966px) {
+  .content-info__button {
+    font-size: 15px;
+    min-width: 130px;
+  }
+}
+@media screen and (max-width: 1196px) {
+  .commitment-wrapper::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    padding: 7% 50%; /* Thay padding cố định bằng phần trăm để nó linh hoạt hơn */
+    right: -2%; /* Sử dụng phần trăm thay cho pixel để tự động điều chỉnh với kích thước màn hình */
+    bottom: -5px;
+    z-index: -1;
+  }
+  .navbar__list {
+    flex-wrap: wrap;
+    flex-shrink: 1;
+  }
+}
+@media screen and (max-width: 770px) {
+  .content-heading {
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .content-heading--white {
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .card-showroom__title {
+    font-size: 13px;
+    text-wrap: wrap;
+  }
+  .content-info {
+    flex-direction: column;
+  }
+  .content-info__button {
+    font-size: 12px;
+  }
+  .content-info__left {
+    margin: auto;
+    width: 100%;
+  }
+  .content-info__right {
+    margin-top: 30px;
+    width: 100%;
+  }
+  .content-info__heading {
+    font-size: 20px;
+  }
+  .choose__content {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .choose__video {
+    width: 100%;
+  }
+  .choose__commit {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=media.css.map */

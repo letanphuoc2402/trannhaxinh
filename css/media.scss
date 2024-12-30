@@ -1,0 +1,88 @@
+@media screen and (max-width: 992px) {
+  .header-top {
+    &__contact {
+      display: none;
+    }
+    &__company {
+      margin: 0 auto;
+    }
+  }
+}
+@media screen and (max-width: 966px) {
+  .content-info {
+    &__button {
+      font-size: 15px;
+      min-width: 130px;
+    }
+  }
+}
+
+@media screen and (max-width: 1196px) {
+  .commitment-wrapper::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    padding: 7% 50%; /* Thay padding cố định bằng phần trăm để nó linh hoạt hơn */
+    right: -2%; /* Sử dụng phần trăm thay cho pixel để tự động điều chỉnh với kích thước màn hình */
+    bottom: -5px;
+    z-index: -1;
+  }
+  .navbar {
+    &__list {
+      flex-wrap: wrap;
+      flex-shrink: 1;
+    }
+  }
+}
+@media screen and (max-width: 770px) {
+  .content-heading {
+    font-size: 17px;
+    font-weight: 600;
+    &--white {
+      font-size: 17px;
+      font-weight: 600;
+    }
+  }
+  .card {
+    &-showroom {
+       &__title
+       {
+        font-size: 13px;
+        text-wrap: wrap;
+       }
+    }
+  }
+
+  .content-info {
+    flex-direction: column;
+    &__button {
+      font-size: 12px;
+    }
+    &__left {
+      margin: auto;
+      width: 100%; 
+    }
+
+    &__right {
+        margin-top: 30px;
+      width: 100%; 
+    }
+    &__heading {
+      font-size: 20px;
+    }
+  }
+  .choose {
+    &__content {
+      display: flex;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: center !important;
+    }
+    &__video {
+      width: 100%;
+    }
+    &__commit {
+      width: 100%;
+    }
+  }
+}
