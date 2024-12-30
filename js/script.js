@@ -84,3 +84,14 @@ var articleSwiper = new Swiper('.articleSwiper', {
         },
     },
 });
+function incrementQuantity() {
+    const input = document.querySelector('.quantity-input');
+    input.value = parseInt(input.value) + 1;
+}
+
+function decrementQuantity() {
+    const input = document.querySelector('.quantity-input');
+    if (parseInt(input.value) > 1) {
+        input.value = parseInt(input.value) - 1;
+    }
+}

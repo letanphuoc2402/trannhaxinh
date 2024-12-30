@@ -27,7 +27,7 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper" style="background-color: white;">
         <div class="header">
             <!-- Header Top  -->
             <div class="container">
@@ -77,100 +77,258 @@
                 </ul>
             </div>
         </div>
-        
-        <!-- Footer -->
-        <footer class="footer-section">
-            <div class="container py-5">
-                <div class="row gy-4">
-                    <!-- Contact Information -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-block">
-                            <h3 class="footer-title">Thông Tin Liên Hệ</h3>
-                            <div class="footer-content">
-                                <p class="d-flex align-items-start gap-2">
-                                    <i class="fas fa-map-marker-alt mt-1"></i>
-                                    <span>Trụ sở chính:Số 2 Đường TCH 16, Phường Tân Chánh Hiệp, Quận 12, Thành phố Hồ
-                                        Chí
-                                        Minh</span>
-                                </p>
-                                <p class="d-flex align-items-center gap-2">
-                                    <i class="fas fa-globe"></i>
-                                    <span>Website: www.trannhaxinh.com</span>
-                                </p>
-                                <p class="d-flex align-items-center gap-2">
-                                    <i class="fas fa-phone"></i>
-                                    <span>0931.722.889 (Ms. Huệ)</span>
-                                </p>
-                                <p class="d-flex align-items-center gap-2">
-                                    <i class="fas fa-envelope"></i>
-                                    <span>trannhaxinh.vn@gmail.com</span>
-                                </p>
-                                <div class="social-links d-flex gap-3 mt-3">
-                                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
-                                </div>
+        <!-- Product Detail -->
+        <div class="product-detail pb-5">
+            <div class="container">
+                <div class="row g-4">
+                    <!-- Product Image Column -->
+                    <div class="col-lg-6">
+                        <div class="product-image-container position-relative">
+                            <div class="ratio ratio-16x9">
+                                <img src="/img/detail.jpg" alt="Trần xuyên sáng V.P Showroom" class="product-image">
                             </div>
+                            <button class="zoom-button">
+                                <i class="fas fa-expand-arrows-alt"></i>
+                            </button>
                         </div>
                     </div>
 
-                    <!-- Services -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-block">
-                            <h3 class="footer-title">Dịch Vụ Cung Cấp</h3>
-                            <ul class="footer-services">
-                                <li><a href="#">Trần Xuyên Sáng</a></li>
-                                <li><a href="#">Trần xuyên sáng 3d</a></li>
-                                <li><a href="#">Thi công trần xuyên sáng</a></li>
-                                <li><a href="#">Trần nhà 3d</a></li>
-                                <li><a href="#">Báo giá trần xuyên sáng</a></li>
-                                <li><a href="#">Trần Sao</a></li>
-                                <li><a href="#">Trần sao nhân tạo phòng ngủ</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                    <!-- Product Details Column -->
+                    <div class="col-lg-6">
+                        <div class="product-details">
+                            <h1 class="product-title mb-5">Trần xuyên sáng V.P -Showroom</h1>
 
-                    <!-- Contact Form -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-block">
-                            <h3 class="footer-title">Đăng Ký Tư Vấn</h3>
-                            <form class="footer-form">
-                                <div class="mb-3">
-                                    <input type="text" class="form-control" placeholder="Họ và tên" required>
-                                </div>
-                                <div class="mb-3">
-                                    <input type="email" class="form-control" placeholder="Email" required>
-                                </div>
-                                <div class="mb-3">
-                                    <input type="tel" class="form-control" placeholder="Số điện thoại" required>
-                                </div>
-                                <button type="submit" class="btn btn-submit">Gửi</button>
-                            </form>
-                        </div>
-                    </div>
+                            <!-- Contact Button Top -->
+                            <a href="tel:0931722889" class="ms-5 btn-contact">
+                                <i class="fas fa-phone-alt me-2"></i>
+                                LIÊN HỆ
+                            </a>
 
-                    <!-- Map -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-block">
-                            <h3 class="footer-title">Bản Đồ</h3>
-                            <div class="ratio ratio-1x1">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.485398611086!2d106.6297867!3d10.8537483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752bee0b0ef9e5%3A0x5b4da59e47aa97a8!2zMiBUQ0ggMTYsIFTDom4gQ2jDoW5oIEhp4buHcCwgUXXhuq1uIDEyLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmg!5e0!3m2!1svi!2s!4v1639996091693!5m2!1svi!2s"
-                                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            <!-- Quantity Selector -->
+                            <div class="quantity-selector d-flex align-items-start mb-4 mt-5">
+                                <button class="btn-quantity" onclick="decrementQuantity()">-</button>
+                                <input type="number" class="quantity-input" value="5" min="1" readonly>
+                                <button class="btn-quantity" onclick="incrementQuantity()">+</button>
+                                <button class="btn-contact ms-3">
+                                    LIÊN HỆ
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+        <!-- Reviews Form -->
+        <div class="reviews-wrapper mt-5">
+            <div class="container">
+                <div class="review-section">
+                    <span class="review-header">ĐÁNH GIÁ(0)</span>
+                    <div class="review-content">
+                        <h3>Đánh giá</h3>
+                        <p class="no-reviews">Chưa có đánh giá nào.</p>
 
-        <!-- Swiper JS -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script src="./js/script.js"></script>
+                        <div class="review-form-container">
+                            <h4>Hãy là người đầu tiên nhận xét "Trần xuyên sáng V.P -Showroom"</h4>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"></script>
+                            <form class="review-form">
+                                <div class="mb-3">
+                                    <label class="review-label">Đánh giá của bạn *</label>
+                                    <div class="star-rating">
+                                        <input type="radio" id="star5" name="rating" value="5">
+                                        <label for="star5"><i class="far fa-star"></i></label>
+                                        <input type="radio" id="star4" name="rating" value="4">
+                                        <label for="star4"><i class="far fa-star"></i></label>
+                                        <input type="radio" id="star3" name="rating" value="3">
+                                        <label for="star3"><i class="far fa-star"></i></label>
+                                        <input type="radio" id="star2" name="rating" value="2">
+                                        <label for="star2"><i class="far fa-star"></i></label>
+                                        <input type="radio" id="star1" name="rating" value="1">
+                                        <label for="star1"><i class="far fa-star"></i></label>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="review" class="review-label">Nhận xét của bạn *</label>
+                                    <textarea class="review-textarea" id="review" rows="5" required></textarea>
+                                </div>
+
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-6">
+                                        <label for="name" class="review-label">Tên *</label>
+                                        <input type="text" class="review-input" id="name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="review-label">Email *</label>
+                                        <input type="email" class="review-input" id="email" required>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 review-checkbox">
+                                    <input type="checkbox" class="review-checkbox-input" id="saveInfo">
+                                    <label class="review-checkbox-label" for="saveInfo">
+                                        Lưu tên của tôi, email, và trang web trong trình duyệt này cho lần bình luận kế
+                                        tiếp của tôi.
+                                    </label>
+                                </div>
+
+                                <button type="submit" class="btn-submit">GỬI ĐI</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Related Product -->
+        <div class="releated-product mt-5">
+            <!-- SHOW ROOM -->
+            <div class="container">
+                <h4 class="text-dark">SẢN PHẨM TƯƠNG TỰ</h4>
+                <div class="row">
+                    <!-- Card 1 -->
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="card-showroom">
+                            <img src="./img/card.jpeg" alt="" class="card-showroom__image img-fluid">
+                            <h7 class="card-showroom__title">
+                                TRẦN XUYÊN SÁNG - SHOWROOM
+                            </h7>
+                            <button class="card-showroom__button"> 
+                                <i class="fas fa-phone-alt me-1"></i>
+                                LIÊN HỆ</button>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="card-showroom">
+                            <img src="./img/card.jpeg" alt="" class="card-showroom__image img-fluid">
+                            <h7 class="card-showroom__title">
+                                TRẦN XUYÊN SÁNG - SHOWROOM
+                            </h7>
+                            <button class="card-showroom__button"> 
+                                <i class="fas fa-phone-alt me-1"></i>
+                                LIÊN HỆ</button>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="card-showroom">
+                            <img src="./img/card.jpeg" alt="" class="card-showroom__image img-fluid">
+                            <h7 class="card-showroom__title">
+                                TRẦN XUYÊN SÁNG - SHOWROOM
+                            </h7>
+                            <button class="card-showroom__button"> 
+                                <i class="fas fa-phone-alt me-1"></i>
+                                LIÊN HỆ</button>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="card-showroom">
+                            <img src="./img/card.jpeg" alt="" class="card-showroom__image img-fluid">
+                            <h7 class="card-showroom__title">
+                                TRẦN XUYÊN SÁNG - SHOWROOM
+                            </h7>
+                            <button class="card-showroom__button"> 
+                                <i class="fas fa-phone-alt me-1"></i>
+                                LIÊN HỆ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container py-5">
+            <div class="row gy-4">
+                <!-- Contact Information -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-block">
+                        <h3 class="footer-title">Thông Tin Liên Hệ</h3>
+                        <div class="footer-content">
+                            <p class="d-flex align-items-start gap-2">
+                                <i class="fas fa-map-marker-alt mt-1"></i>
+                                <span>Trụ sở chính:Số 2 Đường TCH 16, Phường Tân Chánh Hiệp, Quận 12, Thành phố Hồ
+                                    Chí
+                                    Minh</span>
+                            </p>
+                            <p class="d-flex align-items-center gap-2">
+                                <i class="fas fa-globe"></i>
+                                <span>Website: www.trannhaxinh.com</span>
+                            </p>
+                            <p class="d-flex align-items-center gap-2">
+                                <i class="fas fa-phone"></i>
+                                <span>0931.722.889 (Ms. Huệ)</span>
+                            </p>
+                            <p class="d-flex align-items-center gap-2">
+                                <i class="fas fa-envelope"></i>
+                                <span>trannhaxinh.vn@gmail.com</span>
+                            </p>
+                            <div class="social-links d-flex gap-3 mt-3">
+                                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-block">
+                        <h3 class="footer-title">Dịch Vụ Cung Cấp</h3>
+                        <ul class="footer-services">
+                            <li><a href="#">Trần Xuyên Sáng</a></li>
+                            <li><a href="#">Trần xuyên sáng 3d</a></li>
+                            <li><a href="#">Thi công trần xuyên sáng</a></li>
+                            <li><a href="#">Trần nhà 3d</a></li>
+                            <li><a href="#">Báo giá trần xuyên sáng</a></li>
+                            <li><a href="#">Trần Sao</a></li>
+                            <li><a href="#">Trần sao nhân tạo phòng ngủ</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-block">
+                        <h3 class="footer-title">Đăng Ký Tư Vấn</h3>
+                        <form class="footer-form">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Họ và tên" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="tel" class="form-control" placeholder="Số điện thoại" required>
+                            </div>
+                            <button type="submit" class="btn btn-submit">Gửi</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Map -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-block">
+                        <h3 class="footer-title">Bản Đồ</h3>
+                        <div class="ratio ratio-1x1">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.485398611086!2d106.6297867!3d10.8537483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752bee0b0ef9e5%3A0x5b4da59e47aa97a8!2zMiBUQ0ggMTYsIFTDom4gQ2jDoW5oIEhp4buHcCwgUXXhuq1uIDEyLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmg!5e0!3m2!1svi!2s!4v1639996091693!5m2!1svi!2s"
+                                style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 
 </body>
 
